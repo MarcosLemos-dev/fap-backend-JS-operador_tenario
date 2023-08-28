@@ -1,0 +1,48 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+/*
+Instruções
+Crie dois códigos de sistema de notas para uma escola. O primeiro código deve ser um
+programa que informa se o aluno reprovou, ou não, com base nas três notas que ele
+adicionou ao programa. Utilize, no mínimo, um operador de atribuição e um operador
+ternário. O segundo código é um programa que o aluno deve escrever duas notas e o
+retorno informa a nota mínima que ele deve tirar na próxima prova para poder passar
+com nota sete.
+desenvolvido por MarcosLemos-dev
+*/
+console.log("Welcome to Programiz!");
+
+console.log('*************aluno aprovado ou nao usando operador ternario *******');
+
+
+
+
+let num1 = parseFloat(prompt('digite o primeira nota: '));
+let num2 = parseFloat(prompt('digite o segunda nota: '));
+let num3 = parseFloat(prompt('digite o terceira nota: '));
+let result ;
+
+
+result = (num1+num2+num3)/3
+
+result = result < 5  ? 'reprovou' :  'aprovou';
+console.log('resultado ', result);
+console.log('*************fim do codigo do operador ternario ******* \n');
+
+console.log('*************aluno aprovado ou nao  *******');
+ num1 = parseFloat(prompt('digite o primeira nota: '));
+num2 = parseFloat(prompt('digite o segunda nota: '));
+
+result = (num1 + num2)/2;
+
+if(result>=5 && result < 7){
+   let nota_necessaria = 21 - num1 -num2;
+    console.log("o aluno precisa tirar na proxima prova no minimo: ", nota_necessaria, "pontos para ser aprovado com nota 7");
+    
+}else if(result >=7 ){
+    console.log("aprovado automaticamente");
+}else{
+    console.log("reprovado automaticamente");
+}
+console.log('*************fim do codigo do aluno aprovado ******* \n');
+
